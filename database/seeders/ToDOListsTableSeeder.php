@@ -13,6 +13,11 @@ class ToDOListsTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $param = [
+            'content' => 'touch with Mr.Mukunoki',
+        ];
+
+        DB::table('todolists')->insert($param);
+        
     }
 }

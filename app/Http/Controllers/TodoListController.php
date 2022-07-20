@@ -7,10 +7,18 @@ use Illuminate\Http\Request;
 class TodoListConteroller extends Controller
 {
     public function index()
-
-    $item = [
-        'content' => 'ToDoList',
+    {
+        $item = [
+            'txt' => 'Todo List',
+            'param' => $request -> param,
     ];
+        return view('index',$item);
+    }
 
-    return view('index',$iten)
+    public function create()
+    {
+        
+    }
 }
+
+

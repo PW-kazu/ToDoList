@@ -6,12 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ToDoList</title>
 </head>
-<body>
-<th>ToDo List</th>
-<form action="/" method="POST">
-  @csrf
-  <input type="text">
-  
-</form>
-</body>
-</html>
+  <body>
+    <h1><?php echo $txt; ?></h1>
+    <form action="/" method="GET" >
+      @csrf
+      <input type="text">
+      <table>
+        <tr>
+          <th>作成日</th><th>タスク名</th><th>更新</th><th>削除</th>
+        </tr>
+        
+      </table>
+    
+    </form>
+  </body>
+  </html>
